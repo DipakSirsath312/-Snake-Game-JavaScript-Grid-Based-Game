@@ -171,3 +171,9 @@ Mobile touch controls
 Responsive scaling for smaller screens
 
 Score leaderboard system
+
+# 🧑‍💻 Author
+
+Dipak Sirsath
+
+If you found this project helpful or interesting, feel free to ⭐ star the repository.
