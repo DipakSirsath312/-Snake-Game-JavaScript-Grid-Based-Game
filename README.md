@@ -28,12 +28,72 @@ The project focuses on clean structure, modular logic, and responsive UI design.
 
 # 🛠️ Tech Stack
 
-Technology	           Purpose
+Technology	             Purpose
 
-HTML5	                 Structure & layout
+HTML5	                   Structure & layout
 
-CSS3	                 Styling, Grid layout, UI design
+CSS3	                   Styling, Grid layout, UI design
 
-JavaScript(Vanilla)	   Game logic & DOM manipulation
+JavaScript(Vanilla)	     Game logic & DOM manipulation
 
-localStorage	         High score persistence
+localStorage	           High score persistence
+
+# 🧠 Core Game Logic
+
+# 1️⃣ Grid System
+The board is dynamically generated using CSS Grid.
+Each cell is mapped using a coordinate-based key system: 
+
+blocks["row-col"]
+This allows precise control of snake movement and food placement.
+
+# 2️⃣ Snake Representation
+The snake is stored as an array of coordinate objects:
+
+let snake = [
+{ x: 10, y: 19 },
+{ x: 10, y: 20 }
+];
+
+unshift() → Adds new head
+
+pop() → Removes tail
+
+Movement direction controlled via keydown events
+
+# 3️⃣ Collision Detection
+
+The game ends if:
+
+Snake crosses board boundaries
+
+(Future improvement: self-collision detection)
+
+# 4️⃣ Food System
+
+Random coordinates generated within grid limits
+
+When snake head matches food coordinates:
+
+Score increases
+
+Snake grows
+
+New food is generated
+
+# 5️⃣ Score & High Score
+
+Score increases by 10 per food
+
+High score stored using:
+
+localStorage.setItem("high_Score", high_Score.toString());
+
+High score persists even after page reload
+
+# 6️⃣ Timer Implementation
+
+A separate setInterval() updates the game timer every second:
+
+MM-SS format
+
