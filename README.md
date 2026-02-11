@@ -7,3 +7,33 @@ This Snake Game is a browser-based implementation of the traditional arcade game
 The snake moves within a dynamically generated grid, consumes food, increases in length, and updates the score accordingly. The game tracks time and stores the highest score using browser localStorage.
 
 The project focuses on clean structure, modular logic, and responsive UI design.
+
+# 🚀 Features
+
+🎮 Smooth directional movement using keyboard arrow keys
+
+🍎 Random food spawning across the grid
+
+📈 Real-time score update
+
+🏆 Persistent high score storage using localStorage
+
+⏱️ Live timer tracking game duration
+
+🔁 Restart functionality with modal interface
+
+🎨 Styled snake head with custom pseudo-element eyes
+
+🧩 Grid-based dynamic board generation
+
+# 🛠️ Tech Stack
+
+Technology	           Purpose
+
+HTML5	                 Structure & layout
+
+CSS3	                 Styling, Grid layout, UI design
+
+JavaScript(Vanilla)	   Game logic & DOM manipulation
+
+localStorage	         High score persistence
