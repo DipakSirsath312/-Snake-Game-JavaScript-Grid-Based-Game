@@ -97,3 +97,32 @@ A separate setInterval() updates the game timer every second:
 
 MM-SS format
 
+# 📂 Project Structure
+
+Snake-Game/
+│
+
+├── index.html        # Main HTML structure
+
+├── styling.css       # UI styling & grid layout
+
+├── game_logic.js     # Game mechanics & logic
+
+├── snakeFood.png     # Food image asset
+
+└── README.md         # Project documentation
+
+# 🎮 Controls
+
+| Key            | Action     |
+
+| -------------- | ---------- |
+
+| ⬆️ Arrow Up    | Move Up    |
+
+| ⬇️ Arrow Down  | Move Down  |
+
+| ⬅️ Arrow Left  | Move Left  |
+
+| ➡️ Arrow Right | Move Right |
+
