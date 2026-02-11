@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --bg-primary-color: #0c0c0c;
+  --bg-fill-color: #fdfdfc;
+  --bg-food-color: (255, 0, 0, 0.898);
+
+  --text-primary-color: #f0f0f0;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 48px;
+
+  --border-primary-color: #333333;
+
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+  --border-radius-2xl: 24px;
+}
+
+html {
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+main,
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  padding: var(--space-sm);
+  font-size: var(--space-md);
+  border: none;
+  border-radius: var(--border-radius-2xl);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgb(4, 255, 0);
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  background-color: rgb(0, 145, 0);
+}
+
+section {
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: var(--space-lg);
+}
+
+section .infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border-primary-color);
+  border-radius: var(--border-radius-sm);
+  background-color: goldenrod;
+  color: black;
+}
+
+.board {
+  border: 1px solid var(--border-primary-color);
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+  border-radius: 10px;
+  background-color: rgba(117, 138, 158, 0.539);
+  border: none;
+}
+
+.block {
+  /* width: 30px;
+    height: 30px; */
+  border: 1px solid var(--border-primary-color);
+  border: none;
+}
+
+.fill {
+  background-color: #0f3d2e;
+}
+
+.head {
+  background: #004d40;
+  position: relative;
+}
+
+/* Do aankhen */
+.head::before,
+.head::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #8b0000;
+  border-radius: 50%;
+  top: 6px;
+}
+.head::before {
+  left: 6px;
+}
+.head::after {
+  right: 6px;
+}
+.food {
+  background-image: url("snakeFood.png");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: 40px;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #35353587;
+  /* background-color: black; */
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .start-game {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: var(--space-sm);
+}
+
+.modal .game-over {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.game-over h3 {
+  color: darkred;
+  font-size: x-large;
+  padding: var(--space-sm);
+  border: none;
+}
+
+.start-game h3 {
+  color: black;
+  background-color: goldenrod;
+  padding: var(--space-md);
+  border: none;
+}
+
+.modal .game-over {
+  display: none;
+}
