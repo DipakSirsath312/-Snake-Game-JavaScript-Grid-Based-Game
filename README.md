@@ -126,3 +126,48 @@ Snake-Game/
 
 | ➡️ Arrow Right | Move Right |
 
+# 📷 UI Highlights
+
+Modal-based Start & Game Over screens
+
+Styled snake head with custom eye effects
+
+Background blur overlay
+
+Clean scoreboard interface
+
+# 💡 Learning Outcomes
+
+Through this project, the following concepts are demonstrated:
+
+DOM manipulation
+
+Event handling
+
+Game loop management
+
+State management
+
+Coordinate-based movement logic
+
+CSS Grid layout system
+
+Persistent browser storage
+
+Modular function structuring
+
+# 🔮 Future Enhancements
+
+Self-collision detection
+
+Difficulty levels (speed scaling)
+
+Pause functionality
+
+Sound effects
+
+Mobile touch controls
+
+Responsive scaling for smaller screens
+
+Score leaderboard system
